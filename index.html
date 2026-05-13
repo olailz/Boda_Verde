@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elias & Lorena | Boda Real 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@200;300;400;600&family=Great+Vibes&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="luxury-theme">
+
+    <div id="preloader">
+        <div class="loader-wrap">
+            <div class="loader-circle"></div>
+            <p class="loader-text">E & L</p>
+        </div>
+    </div>
+
+    <div id="musicBtn" class="music-player hidden">
+        <div class="equalizer">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </div>
+        <span class="music-label">MUSIC ON</span>
+    </div>
+    <div style="position: absolute; top: -1000px;"><div id="youtube-player"></div></div>
+
+    <section id="hero" class="hero-screen">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="pre-title">NUESTRA BODA</span>
+            <div class="floating-circle">
+                <p class="initials">E & L</p>
+            </div>
+            <h3 id="guest-welcome" class="guest-name"></h3>
+            <h2 class="hero-date">16 . 08 . 2026</h2>
+            <p class="hero-emotion">Dos almas que se prometen un destino compartido.</p>
+            <p class="hero-subtitle">Un día para emocionarse, recordar y celebrar el amor que nos une.</p>
+            <div class="hero-badge">Salón Municipal · Santa Catarina Pinula · 14:00 HRS</div>
+            <button id="btnOpen" class="btn-luxury">Abrir Invitación</button>
+        </div>
+    </section>
+
+    <main id="main-content" class="hidden">
+        
+        <section class="section container">
+            <h1 class="main-title scroll-reveal">Elias & Lorena</h1>
+            <div class="divider"></div>
+            <p class="bible-verse scroll-reveal">"Nosotros amamos, porque Él nos amó primero." <br><span>1 Juan 4:19</span></p>
+            
+            <div class="hero-image">
+                <img src="img/hero-main.jpg" alt="Elias y Lorena" class="main-hero-img">
+            </div>
+        </section>
+
+        <section class="section bg-verde-suave">
+            <div class="container">
+                <h3 class="label-primary scroll-reveal">CUÁNDO</h3>
+                <div class="detail-card scroll-reveal">
+                    <h5>Fecha: 16 de agosto de 2026</h5>
+                    <h5>Hora: 14:00 horas</h5>
+                    <h5>Lugar: Salón Municipal, Santa Catarina Pinula</h5>
+                    <div class="calendar-buttons">
+                        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda%20de%20Elias%20y%20Lorena&dates=20260816T140000Z/20260816T220000Z&details=Ceremonia%20y%20recepción&location=Salón%20Municipal,%20Santa%20Catarina%20Pinula" target="_blank" class="btn-text">Agregar a Google Calendar</a>
+                        <a href="https://outlook.live.com/calendar/0/deeplink/compose?subject=Boda%20de%20Elias%20y%20Lorena&startdt=2026-08-16T14:00:00&enddt=2026-08-16T22:00:00&body=Ceremonia%20y%20recepción&location=Salón%20Municipal,%20Santa%20Catarina%20Pinula" target="_blank" class="btn-text">Agregar a Outlook</a>
+                        <a href="https://calendar.google.com/calendar/ical/primary/public/basic.ics" target="_blank" class="btn-text">Agregar a Apple Calendar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container">
+            <h3 class="label-primary scroll-reveal">DÓNDE</h3>
+            <div class="detail-card scroll-reveal">
+                <h5>Salón Municipal, Santa Catarina Pinula</h5>
+                <p>Dirección completa: [Dirección exacta]</p>
+                <div class="map-buttons">
+                    <a href="https://maps.google.com/?q=Salón+Municipal+Santa+Catarina+Pinula" target="_blank" class="btn-text">Ver en Google Maps</a>
+                    <a href="https://waze.com/ul?q=Salón+Municipal+Santa+Catarina+Pinula" target="_blank" class="btn-text">Ver en Waze</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-verde-suave">
+            <div class="container">
+                <h3 class="label-gold">TIEMPO PARA EL GRAN DÍA</h3>
+                <p class="countdown-copy">La cuenta regresiva hacia nuestra boda está activa. ¡Te esperamos para celebrar juntos!</p>
+                <div id="countdown" class="countdown-wrap scroll-reveal detail-card">
+                    <div class="count-box"><span id="days">00</span><small>DÍAS</small></div>
+                    <div class="count-box"><span id="hours">00</span><small>HORAS</small></div>
+                    <div class="count-box"><span id="minutes">00</span><small>MINUTOS</small></div>
+                    <div class="count-box"><span id="seconds">00</span><small>SEGUNDOS</small></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-verde-suave">
+            <div class="container">
+                <h3 class="label-primary scroll-reveal">NUESTRO CRONOGRAMA</h3>
+                <div class="timeline scroll-reveal detail-card">
+                    <div class="time-item">
+                        <div class="time-mark">14:00 HRS</div>
+                        <div class="time-info">
+                            <h5>CEREMONIA RELIGIOSA</h5>
+                            <p>Salón Municipal, Santa Catarina Pinula</p>
+                            <a href="https://maps.google.com" target="_blank" class="btn-text">Ver Ubicación</a>
+                        </div>
+                    </div>
+                    <div class="time-item">
+                        <div class="time-mark">17:00 HRS</div>
+                        <div class="time-info">
+                            <h5>RECEPCIÓN & CENA</h5>
+                            <p>Celebración en el Gran Salón</p>
+                            <a href="https://maps.google.com/?q=Gran+Salón+Santa+Catarina+Pinula" target="_blank" class="btn-text">Ver Ubicación</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-verde-suave">
+            <div class="container">
+                <h3 class="label-primary scroll-reveal">NUESTRA HISTORIA</h3>
+                <div class="detail-card scroll-reveal">
+                    <p>Todo comenzó en [año], cuando el destino nos unió en [lugar]. Desde ese momento, supimos que estábamos destinados a compartir nuestras vidas. A lo largo de los años, hemos construido una historia llena de amor, risas y aventuras inolvidables. Ahora, con gran alegría, damos el paso final para sellar nuestro compromiso eterno.</p>
+                    <div class="story-gallery">
+                        <figure class="story-item">
+                            <img src="img/story1.jpg" alt="Nuestra primera cita" class="story-img">
+                            <figcaption>Nuestra primera cita</figcaption>
+                        </figure>
+                        <figure class="story-item">
+                            <img src="img/story2.jpg" alt="Viaje juntos" class="story-img">
+                            <figcaption>Viaje juntos</figcaption>
+                        </figure>
+                        <figure class="story-item">
+                            <img src="img/story3.jpg" alt="Propuesta" class="story-img">
+                            <figcaption>Propuesta</figcaption>
+                        </figure>
+                        <figure class="story-item">
+                            <img src="img/story4.jpg" alt="Fiesta de compromiso" class="story-img">
+                            <figcaption>Fiesta de compromiso</figcaption>
+                        </figure>
+                        <figure class="story-item">
+                            <img src="img/story5.jpg" alt="Preparativos" class="story-img">
+                            <figcaption>Preparativos</figcaption>
+                        </figure>
+                         <figure class="story-item">
+                            <img src="img/story5.jpg" alt="Preparativos" class="story-img">
+                            <figcaption>Preparativos</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-dark">
+            <div class="container scroll-reveal detail-card">
+                <i class="fa-solid fa-user-tie"></i>
+                <h3 class="label-gold">CÓDIGO DE VESTIMENTA</h3>
+                <p class="dress-title">FORMAL / ETIQUETA</p>
+                <div class="dress-details">
+                    <div class="dress-gender">
+                        <h5>Hombres</h5>
+                        <p>Traje formal, corbata opcional. Colores preferidos: tonos verdes y dorados.</p>
+                        <a href="https://www.pinterest.com/search/pins/?q=traje%20formal%20hombres%20verde%20dorado" target="_blank" class="btn-luxury">Inspiración en Pinterest</a>
+                    </div>
+                    <div class="dress-gender">
+                        <h5>Mujeres</h5>
+                        <p>Vestido de cóctel o largo. Evitar blanco. Colores preferidos: tonos verdes y dorados.</p>
+                        <a href="https://www.pinterest.com/search/pins/?q=vestido%20coctel%20mujeres%20verde%20dorado" target="_blank" class="btn-luxury">Inspiración en Pinterest</a>
+                    </div>
+                </div>
+                <div class="color-palette">
+                    <div class="color" style="background: #4a5d4e;"></div>
+                    <div class="color" style="background: #2c3327;"></div>
+                    <div class="color" style="background: #c5a059;"></div>
+                    <div class="color" style="background: #ffffff;"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container scroll-reveal">
+            <div class="gift-box detail-card">
+                <i class="fa-solid fa-envelope-open-text"></i>
+                <h3>REGALOS</h3>
+                <p>Su presencia es nuestro mejor regalo. Si desean tener un detalle, contaremos con <strong>lluvia de sobres</strong> o transferencia bancaria.</p>
+                <div class="bank-details">
+                    <p><strong>Banco Industrial</strong></p>
+                    <p>Cuenta: 000-000000-0</p>
+                    <p>A nombre de: Elias Ibarra</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-verde-suave">
+            <div class="container">
+                <h3 class="label-primary scroll-reveal">A TOMAR EN CUENTA</h3>
+                <div class="detail-card scroll-reveal">
+                    <div class="important-items">
+                        <div class="important-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <h5>Hora de Llegada</h5>
+                            <p>Por favor, llega con 15 minutos de anticipación a la hora señalada para evitar retrasos en la ceremonia.</p>
+                        </div>
+                        <div class="important-item">
+                            <i class="fa-solid fa-shirt"></i>
+                            <h5>Código de Vestimenta</h5>
+                            <p>Te invitamos a seguir nuestro código de vestimenta formal / etiqueta. Consulta la sección de "Código de Vestimenta" para más detalles.</p>
+                        </div>
+                        <div class="important-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <h5>Contacto Importante</h5>
+                            <p>Para cualquier duda o emergencia durante el evento, no dudes en comunicarte con nosotros. Estaremos pendientes de ti.</p>
+                        </div>
+                        <div class="important-item">
+                            <i class="fa-solid fa-camera"></i>
+                            <h5>Fotografía y Video</h5>
+                            <p>Se permitirán fotos y videos durante el evento. Por favor, sé respetuoso durante la ceremonia religiosa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container scroll-reveal">
+            <div class="rsvp-card detail-card">
+                <h2>CONFIRMACIÓN</h2>
+                <p>Favor de confirmar antes del 01 de agosto de 2026</p>
+                <form id="rsvpForm">
+                    <div class="form-row">
+                        <input type="text" id="inputName" name="name" placeholder="Tu Nombre Completo" required>
+                    </div>
+                    <div class="form-row">
+                        <select name="attending" required>
+                            <option value="" disabled selected>¿Asistirás?</option>
+                            <option value="si">Sí, con mucho gusto</option>
+                            <option value="no">No podré asistir</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <input type="number" name="guests" placeholder="Número de acompañantes" min="0" max="5">
+                    </div>
+                    <div class="form-row">
+                        <textarea name="message" placeholder="Mensaje o saludo (opcional)" rows="4"></textarea>
+                        <small class="field-note">Escribe un mensaje opcional para los novios.</small>
+                    </div>
+                    <button type="submit" class="btn-luxury full gold-bg">ENVIAR CONFIRMACIÓN</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section bg-verde-suave">
+            <div class="container">
+                <h3 class="label-primary scroll-reveal">AGRADECIMIENTOS</h3>
+                <div class="detail-card scroll-reveal">
+                    <p>Queremos agradecer a todos nuestros seres queridos por acompañarnos en este día tan especial. Su amor y apoyo han hecho posible este momento. ¡Los esperamos con los brazos abiertos!</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="final-footer">
+            <div class="footer-content">
+                <div class="footer-message">
+                    <p class="f-names">E & L</p>
+                    <p class="footer-quote">"El amor es la fuerza más poderosa del universo"</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="credits">
+                    <span>Designed & Developed by</span>
+                    <p><strong>OLAILZ SOFTWARE ENGINEERING</strong></p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
